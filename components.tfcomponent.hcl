@@ -18,6 +18,11 @@ variable "subnet_public_id" {
   type        = string
 }
 
+variable "bucket_id" {
+  description = "bucket_id"
+  type        = string
+}
+
 required_providers {
   random = {
     source  = "hashicorp/random"
@@ -40,6 +45,7 @@ component "api" {
     vpc_id             = var.vpc_id
     subnet_private_id  = var.subnet_private_id
     subnet_public_id   = var.subnet_public_id
+    bucket_id          = var.bucket_id
   }
 
   providers = {
@@ -54,6 +60,7 @@ component "ui" {
     vpc_id             = var.vpc_id
     subnet_private_id  = var.subnet_private_id
     subnet_public_id   = var.subnet_public_id
+    bucket_id          = var.bucket_id
   }
 
   providers = {

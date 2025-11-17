@@ -6,3 +6,6 @@ output "ui_public_hostname" {
   value = random_pet.ui_public_hostname.id
 }
 
+output "ui_bucket_id" {
+  value = random_pet.ui_bucket.id
+}

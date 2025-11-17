@@ -13,3 +13,8 @@ variable "subnet_public_id" {
   description = "Public subnet ID"
   type = string
 }
+
+variable "bucket_id" {
+  description = "Bucket ID"
+  type = string
+}

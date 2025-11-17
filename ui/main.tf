@@ -19,3 +19,8 @@ resource "random_pet" "ui_public_hostname" {
   prefix = "https://ui-app-${var.vpc_id}-${var.subnet_public_id}"
   length = 3
 }
+
+resource "random_pet" "ui_bucket" {
+  prefix = "https://storage-${var.bucket_id}"
+  length = 3
+}
