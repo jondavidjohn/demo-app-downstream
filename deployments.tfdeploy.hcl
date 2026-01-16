@@ -18,10 +18,10 @@ deployment "prod" {
 
 upstream_input "network_stack" {
   type = "stack"
-  source = "app.terraform.io/team-runtime/jon-testing/demo-network-upstream"
+  source = "tfcdev-8e6580d7.ngrok.app/hashicorp/Default Project/demo-network-upstream"
 }
 
 upstream_input "storage_stack" {
   type = "stack"
-  source = "app.terraform.io/team-runtime/jon-testing/demo-storage-upstream"
+  source = "tfcdev-8e6580d7.ngrok.app/team-runtime/Default Project/demo-storage-upstream"
 }
